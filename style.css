@@ -2,16 +2,20 @@ body {
     background-color: #d9e9e6;
 }
 
-
-figure {
+#logo {
     width: 100px;
-    transform: rotate(-20deg);
-    position: absolute;
+
 }
 
 
 nav {
     text-align: center;
+}
+
+main{
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
 }
 
 
