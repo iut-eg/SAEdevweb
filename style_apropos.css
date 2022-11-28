@@ -1,4 +1,4 @@
-/* Fichier CSS pour la section Transport en commun*/
+/* Fichier CSS pour la section A propos*/
 body {
     background-color: #d9e9e6;
 }
@@ -6,6 +6,10 @@ body {
 #logo {
     width: 100px;
 
+}
+
+main{
+    background-color: red;
 }
 
 
