@@ -1,0 +1,31 @@
+body {
+    background-color: #d9e9e6;
+}
+
+
+figure {
+    width: 100px;
+    transform: rotate(-20deg);
+    position: absolute;
+}
+
+
+nav {
+    float: right;
+}
+
+
+li {
+    display: inline;
+    padding: 50px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#titre {
+    text-align: center;
+}
