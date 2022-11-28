@@ -11,7 +11,7 @@ figure {
 
 
 nav {
-    float: right;
+    text-align: center;
 }
 
 
@@ -23,6 +23,11 @@ li {
 
 a {
     text-decoration: none;
+}
+footer {
+    background-image: url(noir.png);
+    color: white;
+    text-align: center;
 }
 
 
