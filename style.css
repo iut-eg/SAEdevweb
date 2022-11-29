@@ -11,8 +11,7 @@ body {
 nav {
     text-align: center;
     position: sticky;
-    background-image: url(noir.png);
-    
+    background-image: url(noir.png);    
 }
 
 main{
@@ -33,6 +32,10 @@ footer {
     background-image: url(noir.png);
     color: white;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 

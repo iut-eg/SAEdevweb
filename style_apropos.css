@@ -23,6 +23,10 @@ li {
     color: white;
 }
 
+a{
+    text-decoration: none;
+}
+
 
 footer {
     background-image: url(noir.png);
