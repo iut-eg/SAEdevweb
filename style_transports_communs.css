@@ -1,3 +1,4 @@
+/* Fichier CSS pour la section Transport en commun*/
 body {
     background-color: #d9e9e6;
 }
@@ -15,12 +16,6 @@ nav {
     
 }
 
-main{
-    border: 2px solid black;
-    text-align: center;
-    font-weight: bold;
-}
-
 
 li {
     display: inline;
@@ -34,6 +29,7 @@ footer {
     color: white;
     text-align: center;
 }
+
 
 
 #titre {
