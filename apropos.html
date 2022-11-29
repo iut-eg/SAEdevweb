@@ -13,10 +13,10 @@
 		</header>
 		<nav>
 			<ol>
-				<a href="transport_communs.html"><li class="menu" id="trancom">Transports en commun</li></a>
-				<a href=""><li class="menu" id="tranind">Transports individuels</li></a>
-				<a href=""><li class="menu" id="carte">Carte</li></a>
-				<a href=""><li class="menu" id="propos">À propos</li></a>
+				<a href="transport_communs.html"><li onmouseover="sourisdessus()" onmouseout="sourisplusdessus()" id="trancom">Transports en commun</li></a>
+				<a href=""><li id="tranind" onmouseover="sourisdessus2()" onmouseout="sourisplusdessus2()">Transports individuels</li></a>
+				<a href=""><li id="carte" onmouseover="sourisdessus3()" onmouseout="sourisplusdessus3()">Carte</li></a>
+				<a href="apropos.html"><li id="propos" onmouseover="sourisdessus4()" onmouseout="sourisplusdessus4()">À propos</li></a>
 			</ol>
 		</nav>
 		<main>
@@ -30,8 +30,44 @@
 		<section>
 			<a href="index.html"><input type="button" name="bouton" value="Revenir en haut"></a>
 		</section>
+
+		
 		<footer>
 		Arsan ABDI, Horeb SILVA, Rayan KHEROUA, Elias GUEBASI Mentions légales TDA1
 		</footer>
+
+		<script>
+			function sourisdessus(){
+				document.getElementById("trancom").style.color="blue";
+			}
+	
+			function sourisplusdessus(){
+				document.getElementById("trancom").style.color="white";
+			}
+	
+			function sourisdessus2(){
+				document.getElementById("tranind").style.color="blue";
+			}
+	
+			function sourisplusdessus2(){
+				document.getElementById("tranind").style.color="white";
+			}
+	
+			function sourisdessus3(){
+				document.getElementById("carte").style.color="blue";
+			}
+	
+			function sourisplusdessus3(){
+				document.getElementById("carte").style.color="white";
+			}
+			
+			function sourisdessus4(){
+				document.getElementById("propos").style.color="blue";
+			}
+	
+			function sourisplusdessus4(){
+				document.getElementById("propos").style.color="white";
+			}
+		</script>
 	</body>
 </html>
