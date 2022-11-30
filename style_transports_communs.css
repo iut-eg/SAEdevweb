@@ -75,8 +75,8 @@ footer {
 	}
 #galerie-menu a img 
 {
-	height:120px;
-	width:120px;
+	height:75%;
+	width:75%;
 	border:none;
 	vertical-align:top;
 }
@@ -93,7 +93,7 @@ footer {
 }
 #galerie-menu a:hover,#galerie-menu a:focus 
 {
-	transform:scale(2.07);
+	transform:scale(1);
 	transform-origin:top center;
 	z-index:5;
 	background:white;
@@ -115,5 +115,14 @@ footer {
 	text-align: center;
 	font-weight: bold;
 	
+}
+
+#ancre{
+    width: 50px;
+}
+
+#femme{
+	width: 500px;
+	float: left;
 }
 
