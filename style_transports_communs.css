@@ -47,26 +47,30 @@ footer {
 	border:solid;
 	border-radius:3px;
 	box-shadow:1px 1px 3px gray;
+	
 }
 
 
 #galerie-menu a 
 {
     transform:scale(0.75);
+	
 }
 #galerie-menu a:hover, #galerie-menu a:focus 
 {
     transform:scale(2.1);
+	
 }
 
 #galerie-menu 
 {
-	width:670px;
+	width:100%;
+	height: 800px;
 	margin:auto;
 	border:solid;
 	border-radius:5px;
 	box-shadow:2px 2px 5px gray;
-	background:#ccc;
+	background:black;
 	text-align:center;
 	}
 #galerie-menu a img 
@@ -106,3 +110,10 @@ footer {
 	width:100%;
 	background:rgba(0,0,0,0.3);
 }
+
+#cdg{
+	text-align: center;
+	font-weight: bold;
+	
+}
+
