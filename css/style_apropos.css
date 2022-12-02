@@ -44,7 +44,7 @@ main{
     opacity: 0.5;
     border: 5px solid black;
     font-style: italic;
-    text-align: center;
+    text-align: justify;
     font-size: 20px;
 }
 
