@@ -6,13 +6,16 @@ body {
     width: 100px;
 
 }
-
+h2 {
+    font-weight: bold;
+}
 
 nav {
     text-align: center;
     position: sticky;
     background-image: url(../Pictures/noir.png)   
 }
+
 
 main{
     border: 2px solid black;

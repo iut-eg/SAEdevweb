@@ -16,7 +16,6 @@ nav {
     
 }
 
-
 li {
     display: inline;
     padding: 50px;
@@ -119,6 +118,7 @@ footer {
 	width: 500px;
 	float: left;
 }
+
 
 #bus,#rer,#cdg,#metro{
 	font-weight: bold;
