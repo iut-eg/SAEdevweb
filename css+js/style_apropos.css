@@ -9,12 +9,6 @@ body {
 }
 
 
-nav {
-    text-align: center;
-    position: sticky;
-    background-image: url(../Pictures/noir.png);
-    
-}
 
 
 li {
@@ -48,6 +42,6 @@ main{
     font-size: 20px;
 }
 
-#ancre{
+.ancre{
     width: 50px;
 }

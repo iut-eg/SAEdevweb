@@ -10,11 +10,6 @@ h2 {
     font-weight: bold;
 }
 
-nav {
-    text-align: center;
-    position: sticky;
-    background-image: url(../Pictures/noir.png)   
-}
 
 
 main{
@@ -46,6 +41,6 @@ a {
     text-align: center;
 }
 
-#ancre{
+.ancre{
     width: 50px;
 }

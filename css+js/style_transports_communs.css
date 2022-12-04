@@ -9,13 +9,6 @@ body {
 }
 
 
-nav {
-    text-align: center;
-    position: sticky;
-	background-image: url(../Pictures/noir.png);
-    
-}
-
 li {
     display: inline;
     padding: 50px;
@@ -110,11 +103,11 @@ footer {
 }
 
 
-#ancre{
+.ancre{
     width: 50px;
 }
 
-#femme{
+.femme{
 	width: 500px;
 	float: left;
 }
