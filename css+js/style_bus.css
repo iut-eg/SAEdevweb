@@ -36,10 +36,7 @@ footer {
     width: 50px;
 }
 
-#text{
+#text,#rer{
     text-align: center;
 }
 
-.carousel-indicators{
-    color: black;
-}

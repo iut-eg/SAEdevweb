@@ -2,35 +2,72 @@
 <html>
 	<head>
 		<meta charset= "UTF-8"/>
-		<title>IUT [Espace des Transports]</title>
-		<link rel="stylesheet" href="/style.css">
+		<title>Carte</title>
+		<link rel="stylesheet" href="css+js/bootstrap.min.css">
+		<link rel="stylesheet" href="css+js/style.css">
+		<script src="css+js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<nav>
-			<ol>
-				<a href=""><li id="trancom">Transports en commun</li></a>
-				<a href=""><li id="tranind">Transports individuels</li></a>
-				<a href="carte.html"><li id="carte">Carte</li></a>
-				<a href=""><li id="propos">A propos</li></a>
-			</ol>
-		</nav>
+		<a href="#bas" id="haut">
+			<button type=submit>
+				<img src=Pictures/fleche_bas.png class="ancre" alt="ancrebas">
+			</button>
+		</a>
 		<header>
-			<figure>
-				<a href="/index.html"><img src="/bicycle-solid.svg" alt="logo"></a>
-			</figure>
+			<h1 id="titre"> <a href="index.html"><img src="Pictures/bicycle-solid.svg" alt="logo" id="logo"></a> Nom du site</h1>
 		</header>
+		<!-- LE MENU DE NAVIGATION-->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Transports en commun
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					  <li><a class="dropdown-item" href="bus.html">Bus</a></li>
+					  <li><a class="dropdown-item" href="#">RER</a></li>
+					  <li><a class="dropdown-item" href="#">Métro</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Transports individuels
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					  <li><a class="dropdown-item" href="#">Vélib</a></li>
+					  <li><a class="dropdown-item" href="#">Uber</a></li>
+					  <li><a class="dropdown-item" href="#">Voiture</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="carte.html" >Carte</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="apropos.html">A propos</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
 		<main>
 			
         <!--    <iframe src="https://snazzymaps.com/embed/442352" width="100%" height="600px" style="border:none;"></iframe>-->
                 <iframe width="600px" height="500px" frameborder="0" allowfullscreen src="//umap.openstreetmap.fr/en/map/iut-montreuil_839640?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=null&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=true&onLoadPanel=undefined&captionBar=false"></iframe>
                 
-		<section>
-			<a href="/index.html"><input type="button" nam="bouton" value="Revenir en haut"></a>
-		</section>
-		<footer>
-			<p>Arsan, Horeb, Rayan, Elias</p>
-			<p>Mentions légales</p>
-			<p>TDA1</p>
-		</footer>
+				<a href="#haut" id="bas">
+					<button type=submit>
+						<img src="Pictures/fleche_haut.png" class="ancre" alt="ancrehaut">
+					</button>
+				</a>
+		
+				<footer>
+					Arsan ABDI, Horeb SILVA, Rayan KHEROUA, Elias GUEBASI © Mentions légales TDA1 7/12/2022
+				</footer>
+		
 	</body>
 </html>
