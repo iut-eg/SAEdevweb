@@ -35,3 +35,11 @@ footer {
 .ancre{
     width: 50px;
 }
+
+#text{
+    text-align: center;
+}
+
+.carousel-indicators{
+    color: black;
+}
