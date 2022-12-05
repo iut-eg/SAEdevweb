@@ -2,72 +2,77 @@
 <html>
 	<head>
 		<meta charset= "UTF-8" />
-		<link rel="stylesheet" href="style_apropos.css"/>		
+		<link rel="stylesheet" href="css+js/bootstrap.min.css">
+		<link rel="stylesheet" href="css+js/style_apropos.css"/>
+		<script src="css+js/bootstrap.min.js"></script>		
 		<title>A propos</title>
 
 	</head>
 
 	<body>
+		<a href="#bas" id="haut">
+			<button type=submit>
+				<img src=Pictures/fleche_bas.png class="ancre" alt="ancrebas">
+			</button>
+		</a>
 		<header>
-			<h1 id="titre"> <a href="index.html"><img src="bicycle-solid.svg" alt="logo" id="logo"></a> Nom du site</h1>
+			<h1 id="titre"> <a href="index.html"><img src="Pictures/bicycle-solid.svg" alt="logo" id="logo"></a> Nom du site</h1>
 		</header>
-		<nav>
-			<ol>
-				<a href="transport_communs.html"><li onmouseover="sourisdessus()" onmouseout="sourisplusdessus()" id="trancom">Transports en commun</li></a>
-				<a href=""><li id="tranind" onmouseover="sourisdessus2()" onmouseout="sourisplusdessus2()">Transports individuels</li></a>
-				<a href=""><li id="carte" onmouseover="sourisdessus3()" onmouseout="sourisplusdessus3()">Carte</li></a>
-				<a href="apropos.html"><li id="propos" onmouseover="sourisdessus4()" onmouseout="sourisplusdessus4()">À propos</li></a>
-			</ol>
-		</nav>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="transport_communs.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Transports en commun
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					  <li><a class="dropdown-item" href="bus.html">Bus</a></li>
+					  <li><a class="dropdown-item" href="#">RER</a></li>
+					  <li><a class="dropdown-item" href="#">Métro</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Transports individuels
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					  <li><a class="dropdown-item" href="#">Vélib</a></li>
+					  <li><a class="dropdown-item" href="#">Uber</a></li>
+					  <li><a class="dropdown-item" href="#">Voiture</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#">Carte</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="apropos.html">A propos</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
 		<main>
-				<h2>Le règlement général sur la protection des données</h2> 
-				<h3>Qu’est ce que le rgpd ?</h3>
-				Le rgpd, pour règlement général sur la protection des données , est un règlement mis en place par le parlement européen et le conseil du 27 avril 2016, c’est un texte relatif au traitement des données personnels de personnes physiques, concernant aussi bien les entreprises et administrations que de simples utilisateurs. 
-				<h4>Qu’est ce qu’une donnée personnelle ?</h4>
-				Les données personnelles est une information permettant d’identifier directement ou indirectement une personne physique. Par exemple, le nom et le prénom d’une personne physique représente un information permettant d’identifier directement cette personne, et son activité sur internet, ces identifiants sur certains services et autres permettent de l’identifier indirectement. Le rgpd stipule que ces données ne peuvent pas être utilisées n’importe comment et par n’importe qui, dans le but de protéger les personnes physique à l’égard du traitement de leur données. 
-		</main>
+				<h2>The General Data Protection Regulation</h2> 
+				<h3>What is the GDPR?</h3>
+				The GDPR, which stands for General Data Protection Regulation, is a regulation put in place by the European Parliament and the Council on 27 April 2016. It is a text relating to the processing of personal data of natural persons, concerning companies and administrations as well as simple users. 
+				<h4>What is personal data?</h4>
+				Personal data is information that directly or indirectly identifies a natural person. For example, the name and surname of a natural person is information that directly identifies that person, and his or her activity on the Internet, these identifiers on certain services and others allow him or her to be identified indirectly. The GDPR stipulates that such data may not be used in any way and by anyone, in order to protect individuals with regard to the processing of their data.		</main>
 
-		<section>
-			<a href="index.html"><input type="button" name="bouton" value="Revenir en haut"></a>
-		</section>
+		<a href="#haut" id="bas">
+			<button type=submit>
+				<img src="Pictures/fleche_haut.png" class="ancre" alt="ancrehaut">
+			</button>
+		</a>
 
 		
 		<footer>
-		Arsan ABDI, Horeb SILVA, Rayan KHEROUA, Elias GUEBASI Mentions légales TDA1
+			Arsan ABDI, Horeb SILVA, Rayan KHEROUA, Elias GUEBASI © Mentions légales TDA1 7/12/2022
 		</footer>
 
-		<script>
-			function sourisdessus(){
-				document.getElementById("trancom").style.color="blue";
-			}
 	
-			function sourisplusdessus(){
-				document.getElementById("trancom").style.color="white";
-			}
-	
-			function sourisdessus2(){
-				document.getElementById("tranind").style.color="blue";
-			}
-	
-			function sourisplusdessus2(){
-				document.getElementById("tranind").style.color="white";
-			}
-	
-			function sourisdessus3(){
-				document.getElementById("carte").style.color="blue";
-			}
-	
-			function sourisplusdessus3(){
-				document.getElementById("carte").style.color="white";
-			}
-			
-			function sourisdessus4(){
-				document.getElementById("propos").style.color="blue";
-			}
-	
-			function sourisplusdessus4(){
-				document.getElementById("propos").style.color="white";
-			}
-		</script>
 	</body>
 </html>

@@ -2,13 +2,21 @@
 <html>
 	<head>
 		<meta charset= "UTF-8"/>
-		<title>IUT [Espace des Transports]</title>
-		<link rel="stylesheet" href="style.css">
+		<title>Espace des Transports</title>
+		<link rel="stylesheet" href="css+js/bootstrap.min.css">
+		<link rel="stylesheet" href="css+js/style.css">
+		<script src="css+js/bootstrap.min.js"></script>
 	</head>
 	<body>
+		<a href="#bas" id="haut">
+			<button type=submit>
+				<img src=Pictures/fleche_bas.png class="ancre" alt="ancrebas">
+			</button>
+		</a>
 		<header>
-			<h1 id="titre"> <a href="index.html"><img src="bicycle-solid.svg" alt="logo" id="logo"></a> Nom du site</h1>
+			<h1 id="titre"> <a href="index.html"><img src="Pictures/bicycle-solid.svg" alt="logo" id="logo"></a> Nom du site</h1>
 		</header>
+<<<<<<< HEAD
 		<nav>
 			<ol>
 				<a href="transport_communs.html"><li onmouseover="sourisdessus()" onmouseout="sourisplusdessus()" id="trancom">Transports en commun</li></a>
@@ -17,51 +25,86 @@
 				<a href="apropos.html"><li id="propos" onmouseover="sourisdessus4()" onmouseout="sourisplusdessus4()">À propos</li></a>
 			</ol>
 		</nav>
+=======
+		<!-- LE MENU DE NAVIGATION-->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Transports en commun
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					  <li><a class="dropdown-item" href="bus.html">Bus</a></li>
+					  <li><a class="dropdown-item" href="#">RER</a></li>
+					  <li><a class="dropdown-item" href="#">Métro</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Transports individuels
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					  <li><a class="dropdown-item" href="#">Vélib</a></li>
+					  <li><a class="dropdown-item" href="#">Uber</a></li>
+					  <li><a class="dropdown-item" href="#">Voiture</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#" >Carte</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="apropos.html">A propos</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+>>>>>>> e1d3c30a3b46a6c8066054494f9c488c25290808
 		
-		<main>
-			<h2>Bienvenue sur la page d'acccueil dédiée aux transports</h2>
-			<img src="bicycle-solid.svg">
-			(Place pour la carte à mettre)
-		</main>
-		<section>
-			<a href="index.html"><input type="button" name="bouton" value="Revenir en haut"></a>
-		</section>
+
+		  <!--LES IMAGES QUI DEFILE-->
+		  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+			  <div class="carousel-item active">
+				<img src="Pictures/renoi_driving_yellow.jpeg" class="d-block w-100" alt="...">
+			  </div>
+			  <div class="carousel-item">
+				<img src="Pictures/paris_velib_neige.jpg" class="d-block w-100" alt="...">
+			  </div>
+			  <div class="carousel-item">
+				<img src="Pictures/tgv_trains_couple.jpg" class="d-block w-100" alt="...">
+			  </div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			  <span class="visually-hidden">Next</span>
+			</button>
+		  </div>
+		
+		<a href="#haut" id="bas">
+			<button type=submit>
+				<img src="Pictures/fleche_haut.png" class="ancre" alt="ancrehaut">
+			</button>
+		</a>
+
 		<footer>
-			Arsan ABDI, Horeb SILVA, Rayan KHEROUA, Elias GUEBASI © Mentions légales TDA1
+			Arsan ABDI, Horeb SILVA, Rayan KHEROUA, Elias GUEBASI © Mentions légales TDA1 7/12/2022
 		</footer>
 
-		<script>
-			function sourisdessus(){
-				document.getElementById("trancom").style.color="blue";
-			}
-	
-			function sourisplusdessus(){
-				document.getElementById("trancom").style.color="white";
-			}
-	
-			function sourisdessus2(){
-				document.getElementById("tranind").style.color="blue";
-			}
-	
-			function sourisplusdessus2(){
-				document.getElementById("tranind").style.color="white";
-			}
-	
-			function sourisdessus3(){
-				document.getElementById("carte").style.color="blue";
-			}
-	
-			function sourisplusdessus3(){
-				document.getElementById("carte").style.color="white";
-			}
-			
-			function sourisdessus4(){
-				document.getElementById("propos").style.color="blue";
-			}
-	
-			function sourisplusdessus4(){
-				document.getElementById("propos").style.color="white";
-			}
-		</script>
+		
 	</body>
 </html>

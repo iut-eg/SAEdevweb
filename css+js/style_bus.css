@@ -1,0 +1,45 @@
+/* Fichier CSS pour la section Bus */
+body {
+    background-color: #d9e9e6;
+}
+
+#logo {
+    width: 100px;
+
+}
+
+
+li {
+    display: inline;
+    padding: 50px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+footer {
+	background-image: url(../Pictures/noir.png);
+    color: white;
+    text-align: center;
+}
+
+
+
+#titre {
+    text-align: center;
+}
+
+.ancre{
+    width: 50px;
+}
+
+#text{
+    text-align: center;
+}
+
+.carousel-indicators{
+    color: black;
+}

@@ -1,0 +1,46 @@
+body {
+    background-color: #d9e9e6;
+}
+
+#logo {
+    width: 100px;
+
+}
+h2 {
+    font-weight: bold;
+}
+
+
+
+main{
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+li {
+    display: inline;
+    padding: 50px;
+    color: white;
+}
+
+
+footer {
+    color: white;
+    text-align: center;
+    background-image: url(../Pictures/noir.png);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#titre {
+    text-align: center;
+}
+
+.ancre{
+    width: 50px;
+}
