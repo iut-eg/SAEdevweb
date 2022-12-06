@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset= "UTF-8" />
-		<link rel="stylesheet" href="css+js/bootstrap.min.css">
-		<link rel="stylesheet" href="css+js/style_apropos.css"/>
-		<script src="css+js/bootstrap.min.js"></script>		
+		<meta charset= "UTF-8"/>
 		<title>A propos</title>
-
+		<!-- UTILISATION DE BOOTSTRAP-->
+		<link rel="stylesheet" href="css+js/bootstrap.min.css">
+		<link rel="stylesheet" href="css+js/style_apropos.css">
+		<script src="css+js/bootstrap.min.js"></script>
 	</head>
 
-	<body>
+	<body>		
+		<!--Ici c'est pour le bouton qui sert à défiler jusqu'en bas de la page-->
 		<a href="#bas" id="haut">
 			<button type=submit>
 				<img src=Pictures/fleche_bas.png class="ancre" alt="ancrebas">
@@ -17,41 +18,21 @@
 		</a>
 		<header>
 			<h1 id="titre"> <a href="index.html"><img src="Pictures/bicycle-solid.svg" alt="logo" id="logo"></a>Trans'Univ</h1>
+			<p class="text">The website to know everything before moving out to France to study at the IUT of Montreuil</p>
 		</header>
+		<!-- LE MENU DE NAVIGATION-->
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
-			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			  </button>
-			  <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-				<ul class="navbar-nav">
-				  <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="transport_communs.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					  Transports en commun
-					</a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					  <li><a class="dropdown-item" href="bus.html">Bus</a></li>
-					  <li><a class="dropdown-item" href="rer.html">RER</a></li>
-					  <li><a class="dropdown-item" href="metro.html">Métro</a></li>
-					</ul>
-				  </li>
-				  <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					  Transports individuels
-					</a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					  <li><a class="dropdown-item" href="#">Vélib</a></li>
-					  <li><a class="dropdown-item" href="#">Uber</a></li>
-					  <li><a class="dropdown-item" href="#">Voiture</a></li>
-					</ul>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="carte.html">Carte</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="apropos.html">A propos</a>
-				  </li>
-				</ul>
+			  <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+				  <a class="nav-link" href="transports_commun.html">Transports en commun</a>
+				  <a class="nav-link" href="#">Transport individuels</a>
+				  <a class="nav-link" href="carte.html">Carte</a>
+				  <a class="nav-link active" href="apropos.html" aria-current="page">À propos</a>
+				</div>
 			  </div>
 			</div>
 		  </nav>
@@ -61,16 +42,17 @@
 				The GDPR, which stands for General Data Protection Regulation, is a regulation put in place by the European Parliament and the Council on 27 April 2016. It is a text relating to the processing of personal data of natural persons, concerning companies and administrations as well as simple users. 
 				<h4>What is personal data?</h4>
 				Personal data is information that directly or indirectly identifies a natural person. For example, the name and surname of a natural person is information that directly identifies that person, and his or her activity on the Internet, these identifiers on certain services and others allow him or her to be identified indirectly. The GDPR stipulates that such data may not be used in any way and by anyone, in order to protect individuals with regard to the processing of their data.		</main>
-
+		
+		<!--Ici c'est pour le bouton qui sert à défiler jusqu'en haut de la page-->
 		<a href="#haut" id="bas">
 			<button type=submit>
 				<img src="Pictures/fleche_haut.png" class="ancre" alt="ancrehaut">
 			</button>
 		</a>
 
-		
+		<!--Les infos en bas de page-->
 		<footer>
-			Arsan ABDI, Horeb SILVA, Rayan KHEROUA, Elias GUEBASI © Mentions légales TDA1 7/12/2022
+			Arsan ABDI, Horeb SILVA, Rayan KHEROUA, Elias GUEBASI © Legal Notice TDA1 7/12/2022
 		</footer>
 
 	

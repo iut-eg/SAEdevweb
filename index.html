@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<meta charset= "UTF-8"/>
-		<title>Espace des Transports</title>
+		<title>Trans'Univ</title>
+		<!-- UTILISATION DE BOOTSTRAP-->
 		<link rel="stylesheet" href="css+js/bootstrap.min.css">
 		<link rel="stylesheet" href="css+js/style.css">
 		<script src="css+js/bootstrap.min.js"></script>
@@ -16,44 +17,21 @@
 		</a>
 		<header>
 			<h1 id="titre"> <a href="index.html"><img src="Pictures/bicycle-solid.svg" alt="logo" id="logo"></a>Trans'Univ</h1>
+			<p class="text">Le site pour tout savoir avant d'étudier en France à l'IUT de montreuil</p>
 		</header>
 		<!-- LE MENU DE NAVIGATION-->
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
-			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			  </button>
-			  <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-				<ul class="navbar-nav">
-				<!--Mise en place du menu déroulant de la section transports en communs-->
-				  <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					  Transports en commun
-					</a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					  <li><a class="dropdown-item" href="bus.html">Bus</a></li>
-					  <li><a class="dropdown-item" href="rer.html">RER</a></li>
-					  <li><a class="dropdown-item" href="metro.html">Métro</a></li>
-					</ul>
-				  </li>
-				  <!--Mise en place du menu déroulant de la section transports individuels-->
-				  <li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					  Transports individuels
-					</a>
-					<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					  <li><a class="dropdown-item" href="#">Vélib</a></li>
-					  <li><a class="dropdown-item" href="#">Uber</a></li>
-					  <li><a class="dropdown-item" href="#">Voiture</a></li>
-					</ul>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="carte.html" >Carte</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="apropos.html">A propos</a>
-				  </li>
-				</ul>
+			  <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+				  <a class="nav-link" href="transports_commun.html">Transports en commun</a>
+				  <a class="nav-link" href="#">Transport individuels</a>
+				  <a class="nav-link" href="carte.html">Carte</a>
+				  <a class="nav-link" href="apropos.html">À propos</a>
+				</div>
 			  </div>
 			</div>
 		  </nav>
@@ -86,6 +64,46 @@
 			  <span class="visually-hidden">Next</span>
 			</button>
 		  </div>
+
+		  <!--Mise en place du tableau avec bootstrap-->
+		  <table class="table table-hover table-bordered border-dark">
+			<thead>
+			  <tr>
+				<th scope="col">#</th>
+				<th scope="col">Prénom</th>
+				<th scope="col">Nom</th>
+				<th scope="col">Tâches effectuées</th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr class="table-dark">
+				<th scope="row">1</th>
+				<td>Horeb</td>
+				<td>SILVA</td>
+				<td>a effectué la page "Transports en communs" + page d'accueil</td>
+				
+			  </tr>
+			  <tr>
+				<th scope="row">2</th>
+				<td>Rayan</td>
+				<td>KHEROUA</td>
+				<td> a effectué la page "Carte"</td>
+				
+			  </tr>
+			  <tr class="table-dark">
+				<th scope="row">3</th>
+				<td>Arsan</td>
+				<td>ABDI</td>
+				<td>a effectué la page "A propos"</td>
+			  </tr>
+			  <tr>
+				<th scope ="row">4</th>
+				<td>Elyas</td>
+				<td>GUEBASI</td>
+				<td>a effectué la page "Transport individuels</td>
+			  </tr>
+			</tbody>
+		  </table>
 		<!--Ici c'est pour le bouton qui sert à défiler jusqu'en haut de la page-->
 		<a href="#haut" id="bas">
 			<button type="submit">
