@@ -1,0 +1,114 @@
+/* Fichier CSS pour la section Transport en commun */
+body {
+    background-color: #d9e9e6;
+}
+
+#logo {
+    width: 100px;
+
+}
+
+
+li {
+    display: inline;
+    padding: 50px;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+footer {
+	background-image: url(../Pictures/noir.png);
+    color: white;
+    text-align: center;
+}
+
+
+
+#titre {
+    text-align: center;
+}
+
+.ancre{
+    width: 50px;
+}
+
+.text{
+    text-align: center;
+}
+
+#galerie-menu 
+{
+	width:670px;
+	margin:auto;
+	border:solid;
+	border-radius:10px;
+    /* gère l'ombre derrière les bordures*/
+	box-shadow:2px 2px 5px black;
+
+	background:#ccc;
+	text-align:center;
+	}
+
+/*Cible les images de la division "galerie-menu"*/    
+#galerie-menu a img 
+{
+	height:300px;
+	width:300px;
+	border:none;
+	vertical-align:top;
+}
+
+
+#galerie-menu a 
+{
+	border-radius:15px;
+	display:inline-block;
+
+    /*modifie l'espace de coordonnées utilisé pour la mise en forme visuelle*/
+    transform:scale(0.75);
+    
+    /*gère le dépassement du contenu d'un élément dans son bloc*/
+	overflow:hidden;
+
+	box-shadow: 0 0 15px black;
+	border:solid white;
+    
+    /*contrôler la vitesse d'animation lorsque les propriétés CSS sont modifiées*/
+	transition:1s;
+	
+    z-index:1;
+}
+
+/*"hover" Cible le survol des images et "focus" cible les images lorsqu'ils ont le focus*/
+#galerie-menu a:hover,#galerie-menu a:focus 
+{
+	transform:scale(1.25);
+	transform-origin:top center;
+	z-index:5;
+	background:white;
+	transition:1s;
+}
+#galerie-menu a:before 
+{
+    /*remplace un élément avec une valeur générée.*/
+	content:attr(title);
+	
+    position:absolute;
+	color:white;
+    
+    /*contribue à la définition de l'emplacement vertical des éléments positionnés.*/
+	bottom:0;
+	
+    box-shadow:0 0 3px white;
+	display:block;
+	width:100%;
+	background:rgb(0,0,0,0.3);
+}
+
+
+
+
