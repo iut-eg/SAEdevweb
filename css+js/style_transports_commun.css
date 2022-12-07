@@ -8,13 +8,6 @@ body {
 
 }
 
-
-li {
-    display: inline;
-    padding: 50px;
-    color: white;
-}
-
 a{
     text-decoration: none;
 }
@@ -26,7 +19,22 @@ footer {
     text-align: center;
 }
 
-
+iframe
+{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+section
+{
+	width:80%;
+	margin:auto;
+	border:solid;
+	border-radius:10px;
+    /* gère l'ombre derrière les bordures*/
+	box-shadow:2px 2px 5px black;
+	text-align:center;
+}
 
 #titre {
     text-align: center;
@@ -46,7 +54,6 @@ footer {
 	margin:auto;
 	border:solid;
 	border-radius:10px;
-    /* gère l'ombre derrière les bordures*/
 	box-shadow:2px 2px 5px black;
 
 	background:#ccc;
@@ -108,7 +115,5 @@ footer {
 	width:100%;
 	background:rgb(0,0,0,0.3);
 }
-
-
 
 
