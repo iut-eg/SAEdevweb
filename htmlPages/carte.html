@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset= "UTF-8"/>
+		<title>Carte</title>
+		<!-- UTILISATION DE BOOTSTRAP-->
+		<link rel="stylesheet" href="css+js/bootstrap.min.css">
+		<link rel="stylesheet" href="css+js/style_transports_commun.css">
+		<script src="css+js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!--Ici c'est pour le bouton qui sert à défiler jusqu'en bas de la page-->
+		<a href="#bas" id="haut">
+			<button type=submit>
+				<img src=Pictures/fleche_bas.png class="ancre" alt="ancrebas">
+			</button>
+		</a>
+		<header>
+			<h1 id="titre"> <a href="index.html"><img src="Pictures/bicycle-solid.svg" alt="logo" id="logo"></a>Trans'Univ</h1>
+			<p class="text">Le site pour tout savoir avant d'étudier en France à l'IUT de montreuil</p>
+		</header>
+		<!-- LE MENU DE NAVIGATION-->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+				  <a class="nav-link" href="transports_commun.html">Transports en commun</a>
+				  <a class="nav-link" href="transports_individuels1.html">Transport individuels</a>
+				  <a class="nav-link active" aria-current="page" href="carte.html">Carte</a>
+				  <a class="nav-link" href="apropos.html" >À propos</a>
+				</div>
+			  </div>
+			</div>
+		  </nav>
+		  <!--CARTE INTERACTIVE-->
+		<main>
+			<section>
+				<h2>Carte interractive</h2>
+			<h4>Localisation pertinante:</h4>
+			<ul>
+				<li>Des arrêts de Bus</li>
+				<li>Des gares</li>
+				<li>Des stations de métro</li>
+				<li>De l'etablissement de l'IUT</li>
+				</ul>
+			</section>
+			<iframe src="https://www.google.com/maps/d/u/1/embed?mid=1pH4_D_lG25jxAIAAywZ1t-_eokoOe-s&ehbc=2E312F" width="82%" height="600" margin="auto"></iframe>	
+
+			<!--Ici c'est pour le bouton qui sert à défiler jusqu'en haut de la page-->
+			<a href="#haut" id="bas">
+				<button type=submit>
+					<img src="Pictures/fleche_haut.png" class="ancre" alt="ancrehaut">
+				</button>
+			</a>
+		</main>
+			<!--Les infos en bas de page-->
+			<footer>
+				Arsan ABDI, Horeb SILVA, Rayan KHEROUA, Elias GUEBASI © Mentions légales TDA1 7/12/2022
+			</footer>
+		
+	</body>
+</html>
